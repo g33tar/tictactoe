@@ -31,14 +31,18 @@ boxListener()
       oMoves.push(parseInt(event.target.getAttribute("data-num")));
       event.target.innerHTML = "O";
       counter++;
+			// checkForWin(oMoves, "O");
     }
     else {
       xMoves.push(parseInt(event.target.getAttribute("data-num")));
       event.target.innerHTML = "X";
       counter++;
+      // checkForWin(xMoves, "X");
     }
 	}
 	if (counter ===10){
 		alert("It's a draw!");
 	}
 }
+//function checkForWin(arrMoves, )
+	//need loop that compairs arrMoves against winners combinations
