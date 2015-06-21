@@ -5,7 +5,7 @@ var boxes = document.getElementsByClassName('box')
 
 
 // store winning combinations
-	var winComb = [
+	var winners = [
 		[0,1,2],
 		[0,3,6],
 		[0,4,8],
@@ -17,13 +17,12 @@ var boxes = document.getElementsByClassName('box')
 	]
 
 //eventListener that is multiuse
-	function addXandOListener(){
+	function boxListener(){
   for (var i = boxes.length - 1; i >= 0; i--) {
     boxes[i].addEventListener("click", addXorO);
   }
 }
-addXandOListener()
-addResetListener()
+boxListener()
 
 //XorO making
   function addXorO(event){
@@ -32,16 +31,14 @@ addResetListener()
       oMoves.push(parseInt(event.target.getAttribute("data-num")));
       event.target.innerHTML = "O";
       counter++;
-			// checkForWin(oMoves, "O");
     }
     else {
       xMoves.push(parseInt(event.target.getAttribute("data-num")));
       event.target.innerHTML = "X";
       counter++;
-      // checkForWin(xMoves, "X");
     }
 	}
 	if (counter ===10){
-		alert("Game Over!");
+		alert("It's a draw!");
 	}
 }
