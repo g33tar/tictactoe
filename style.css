@@ -6,7 +6,8 @@
 
 body{
   background: rgba(217, 217, 217, 1);
-  font-family: 'Rock Salt'
+  font-family: 'Rock Salt';
+  color: rgba(49, 13, 49, 1);
 }
 
 h1 {
@@ -17,7 +18,6 @@ h1 {
   margin: 30px auto;
   width: 600px;
   height: 600px;
-
   padding: 5px 2px 2px 5px;
 
 }

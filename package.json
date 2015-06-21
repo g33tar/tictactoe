@@ -1,0 +1,22 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "test": "nodemon --exec jasmine & nodemon --exec standard"
+},
+"standard": {
+  "ignore": 
+    "node_modules/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g33tar/tictactoe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/g33tar/tictactoe/issues"
+  },
+  "homepage": "https://github.com/g33tar/tictactoe#readme"
+}
