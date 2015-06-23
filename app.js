@@ -1,8 +1,7 @@
-var counter = 1
+var counter = 0
 var oMoves = []
 var xMoves =[]
 var boxes = document.getElementsByClassName('box')
-
 
 // store winning combinations
 	var winners = [
@@ -44,5 +43,5 @@ boxListener()
 		alert("It's a draw!");
 	}
 }
-//function checkForWin(arrMoves, )
-	//need loop that compairs arrMoves against winners combinations
+function checkForWin( )
+	// need loop that compairs arrMoves against winners combinations
